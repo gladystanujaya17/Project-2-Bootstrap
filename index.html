@@ -8,20 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="css/style.css" rel="stylesheet" />
+    
     <title>Document</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#"><h2><i class="bi bi-balloon-fill"></i></h2></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-houses"></i> Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About Us</a>
@@ -39,7 +41,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -49,6 +51,103 @@
           </div>
         </div>
       </nav>
+      <div id="carouselExampleCaptions" class="carousel slide slider-home"> <!--pakai slider-home supaya identik dan kalau ada 2 carousel dalam 1 page itu bisa dibedain-->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background: url('images/claudio-schwarz-R67u24pNSBY-unsplash.jpg')">
+            <!-- <img src="images/claudio-schwarz-R67u24pNSBY-unsplash.jpg" class="d-block w-100" alt="Gambar 1"> -->
+            <div class="carousel-caption">
+              <div class="caption-content">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+                <button type="button" class="btn btn-info btn-brand">Info</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="background: url('images/mailchimp-VLpRa5tFdNY-unsplash.jpg')">
+            <!-- <img src="images/mailchimp-VLpRa5tFdNY-unsplash.jpg" class="d-block w-100" alt="Gambar 2"> -->
+            <div class="carousel-caption">
+              <div class="caption-content">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="background: url('images/dan-farrell-fT49QnFucQ8-unsplash.jpg')">
+            <!-- <img src="images/dan-farrell-fT49QnFucQ8-unsplash.jpg" class="d-block w-100" alt="Gambar 3"> -->
+            <div class="carousel-caption">
+              <div class="caption-content">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--SECTION SERVICES-->
+      <div class="section-service">
+        <!-- <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="box green">
+              Column 1
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="box red">
+              Column 2
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-2">
+            <div class="box blue">
+              Column 3
+            </div>
+          </div>
+        </div> -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+                <div class="service-box">
+                  <i class="bi bi-keyboard icon-service"></i>
+                  <h1>Service 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <button type="button" class="btn btn-primary">Read More</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <i class="bi bi-lightning icon-service"></i>
+                <h1>Service 2</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button type="button" class="btn btn-primary">Read More</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <i class="bi bi-megaphone icon-service"></i>
+                <h1>Service 3</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button type="button" class="btn btn-primary">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END SECTION SERVICES-->
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
